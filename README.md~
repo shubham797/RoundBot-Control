@@ -1,0 +1,28 @@
+# README #
+
+This README documents whatever steps are necessary to get application up and running.
+
+### What is this repository for? ###
+
+* Quick summary :: 
+  This is the implementation of GPIO library of Python to control Raspberry PI based Round-Bot.
+  It contains some of the Basic functions in one Class, for better control.
+  Also has functions so that it can be used with wi-fi module.
+* Version  ::
+  Version -- 1.00
+
+### How do I get set up? ###
+
+* Summary of set up ::
+	Raspberry PI,
+	Python installed with GPIO library,
+
+### Contribution guidelines ###
+
+* You are free to contribute, but first create an issue specifying the problem/suggestion.
+
+### Who do I talk to? ###
+
+* Repo owner or admin ::
+  Shubham Singh (admin)
+
