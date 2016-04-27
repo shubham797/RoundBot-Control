@@ -19,7 +19,7 @@ This README documents whatever steps are necessary to get application up and run
 	Python installed with GPIO library,
 
 ### Running the Code ###
-*  actuator_control_1_1.py : <br />
+*  **actuator_control_1_1.py** : <br />
    ```
    a = Motor_Control([7,8,24,25])  # initialize the class with control PIN numbers 
    
@@ -28,10 +28,20 @@ This README documents whatever steps are necessary to get application up and run
    a.straight_backward()
    a.straight_forward()
    
-   del a
+   del a			# Destroying the instance of class
    
    ```
-  
+* **motion-rotate.py** : <br />
+  To control any raspberry pi based differential wheel robot, remotely using wi-fi module, use this module to connect and control the robot.<br />
+  The server port and IP can be defined within first 9-10 lines of code. After that use any socket to connect and pass the control signals. <br />
+  Two input signals has to be given in format : <br /><br /> ~~ dataX_dataY ~~ <br /><br />
+- [ ] *dataX* - controls direction, varies from -25 to 25
+- [ ] *dataY* - contrls power, varies from -1 to 1<br />
+  ```
+  sudo python motion_rotate.py
+  ```
+* **input_control.py** :<br />
+  Similar to motion_rotate.py but uses actuator_1_1 class for controlling.<br />
 
 ### Contribution guidelines ###
 
