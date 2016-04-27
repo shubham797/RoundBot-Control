@@ -1,4 +1,5 @@
-# README #
+
+# RoundBot-Control README #
 
 This README documents whatever steps are necessary to get application up and running.
 
@@ -17,6 +18,21 @@ This README documents whatever steps are necessary to get application up and run
 	Raspberry PI,
 	Python installed with GPIO library,
 
+### Running the Code ###
+*  actuator_control_1_1.py : <br />
+   ```
+   a = Motor_Control([7,8,24,25])  # initialize the class with control PIN numbers 
+   
+   a.rotate_left_fixed()	# function self explained
+   a.rotate_right_fixed()
+   a.straight_backward()
+   a.straight_forward()
+   
+   del a
+   
+   ```
+  
+
 ### Contribution guidelines ###
 
 * You are free to contribute, but first create an issue specifying the problem/suggestion.
@@ -26,4 +42,4 @@ This README documents whatever steps are necessary to get application up and run
 * Repo owner or admin ::
   Shubham Singh (admin)
 
-# RoundBot-Control
+
