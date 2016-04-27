@@ -36,9 +36,10 @@ This README documents whatever steps are necessary to get application up and run
   The server port and IP can be defined within first 9-10 lines of code. After that use any socket to connect and pass the control signals. <br />
   Two input signals has to be given in format : <br /><br /> ~~ dataX_dataY ~~ <br /><br />
 - [ ] *dataX* - controls direction, varies from -25 to 25
-- [ ] *dataY* - contrls power, varies from -1 to 1<br />
+- [ ] *dataY* - controls power, varies from -1 to 1 <br />
   ```
   sudo python motion_rotate.py
+  
   ```
 * **input_control.py** :<br />
   Similar to motion_rotate.py but uses actuator_1_1 class for controlling.<br />
